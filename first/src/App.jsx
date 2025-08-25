@@ -5,6 +5,7 @@ import Contact from './pages/Contact'
 import Error from './pages/Error'
 import { Routes,Route,Navigate} from "react-router-dom";
 import Counter from './pages/Counter'
+import Child from './components/Child'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Route path="/contact" element={<Contact />} />
       <Route path='/error'element={<Error />} />
       <Route path="/counter" element={<Counter />} />
+      <Route path="/child" element={<Child />} />
       <Route path="*" element={<Navigate to='/error'/>} />
     </Routes>
     </>
